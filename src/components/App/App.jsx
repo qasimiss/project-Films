@@ -1,9 +1,10 @@
-import Header from "../../layout/Header";
-
+import Header from "../../layout/Header"
+import Footer from "../../layout/Footer"
 const App = () => {
     return(
         <>
             <Header />
+            <Footer />
         </>
     )
 }
