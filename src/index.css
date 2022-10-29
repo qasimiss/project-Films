@@ -21,3 +21,20 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
 }
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
+
+label:not(:last-child) {
+  margin-right: 1rem;
+}
+
+label > [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+  background-color: #aa00ff
+}
+
+label > [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+  border-color: #aa00ff
+}
