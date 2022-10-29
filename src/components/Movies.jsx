@@ -1,13 +1,15 @@
 import Movie from "./Movie"
 
 const Movies = (props) => {
-    const {movies} = props
-    return( 
+    const { movies = [] } = props
+    return (
         <div className="movies">
-            {movies.map(item => (
-                <Movie key = {item.imdbID} {...item} />)
+            {movies.length ? (
+                movies.map((item) => <Movie key={item.imdbID} {...item} />)
+            ) : (
+                <h4> Nothing found</h4>
             )}
         </div>
     )
 }
-export default Movies;
+export default Movies
